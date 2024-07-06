@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const mongourl = 'mongodb://localhost:27017/person';
-
+require('dotenv').config()
+const mongourl = process.env.Mongourl
 mongoose.connect(mongourl
 );
 
